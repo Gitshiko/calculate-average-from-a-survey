@@ -32,7 +32,7 @@ function collectData() {
     nthPerson += 1;
 
     document.getElementById('nuOfPeople').innerHTML = nthPerson;
-    document.getElementById('averageOfAge').innerHTML = ageAverage;
+    document.getElementById('averageOfAge').innerHTML = Math.round(ageAverage);
 }
 
 
