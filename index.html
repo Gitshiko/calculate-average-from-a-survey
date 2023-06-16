@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online survey</title>
+    <link rel="stylesheet" href="/assets/style.css">
+    <script src="assets/script.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>Online Survey</h1>
+        <p class="topText">Please fill in the form below to participate in the medical survey.</p>
+        
+        <form id="formID" onsubmit="collectData()">
+            <fieldset>
+            <div class="form-row form-name">
+                <label for="nameId">Full Name</label>
+                <input type="text" id="nameId" required >
+            </div>
+            <div class="form-row form-age">
+                <label for="ageId">Age</label>
+                <input type="number" id="ageId" required >
+            </div>
+            <div class="form-row form-email">
+                <label for="emailId">Email</label>
+                <input type="email" id="emailId" required >
+            </div>
+            <div class="form-row form-consent">
+                <p>Please tick the box to provide your consent to use your personal data.</p>
+                <label for="consentId">I consent</label>
+                <input type="checkbox" id="consentId" required >
+            </div>
+            <div class="form-row form-button">
+                <input type="submit" id="buttonId">
+            </div>
+        </fieldset>
+        </form>
+
+        <div class="summary">
+            <h3>Survey statistics</h3>
+            <p> The total number of people participated so far: <span id="nuOfPeople" >0</span></p>
+            <p>  Their average age: <span id="averageOfAge">0</span></p>
+        </div>
+    </main>
+</body>
+</html>

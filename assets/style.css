@@ -1,0 +1,28 @@
+body {
+    background-color: beige;
+    width: 100vW;
+}
+
+main {
+    width: 50%;
+    margin: auto;
+    
+}
+
+h1, p.topText {
+    text-align: center;
+}
+
+div.form-row {
+    padding: 1rem;
+}
+
+div.form-row label {
+    display: inline-block;
+    width: 5rem;
+}
+
+p span {
+    font-weight: bolder;
+}
+
